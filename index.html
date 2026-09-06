@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Output Comparator Tool</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Output Comparator Tool</h1>
+        <p>Compare expected vs. actual output line-by-line to spot differences fast.</p>
+    </header>
+
+    <main>
+
+        <section class="input-panel">
+
+            <div class="text-box">
+                <label for="expected">Expected Output</label>
+                <textarea id="expected" placeholder="Paste the expected output here..."></textarea>
+            </div>
+
+            <div class="text-box">
+                <label for="actual">Actual Output</label>
+                <textarea id="actual" placeholder="Paste the actual output here..."></textarea>
+            </div>
+
+        </section>
+
+        <div class="controls">
+            <button id="compareBtn">Compare</button>
+            <button id="clearBtn" class="secondary">Clear</button>
+            <span id="summary"></span>
+        </div>
+
+        <section id="resultsWrapper" class="results hidden">
+            <h2>Line-by-Line Comparison</h2>
+            <div id="results"></div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Built by Christenvie Nlolo</p>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
